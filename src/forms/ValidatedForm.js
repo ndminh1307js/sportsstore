@@ -25,8 +25,10 @@ export class ValidatedForm extends Component {
       () => {
         if (Object.keys(this.state.validationErrors).length === 0) {
           const data = Object.assign(
-            ...Object.entries(this.formElements),
-          ).map((e) => ({ [e[0]]: e[1].value }));
+            ...Object.entries(this.formElements).map((e) => ({
+              [e[0]]: e[1].value,
+            })),
+          );
           this.props.submitCallback(data);
         }
       },
