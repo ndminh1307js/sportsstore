@@ -48,6 +48,7 @@ export class PaginationButtons extends Component {
             className={`btn mx-1 ${
               num === current ? 'btn-primary' : 'btn-secondary'
             }`}
+            onClick={() => navigate(num)}
           >
             {num}
           </button>
