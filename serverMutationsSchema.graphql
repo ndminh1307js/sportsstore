@@ -7,9 +7,9 @@ input productStore {
 
 input productUpdate {
   id: ID!
-  name: String!
-  description: String!
-  category: String!
+  name: String
+  description: String
+  category: String
   price: Float
 }
 

@@ -7,7 +7,7 @@ type product {
 }
 
 type productPage {
-  totalSize: int!
+  totalSize: Int!
   products(sort: String, page: Int, pageSize: Int): [product]
 }
 
