@@ -8,6 +8,7 @@ export class ProductEditor extends Component {
     <Query query={product} variables={{ id: this.props.match.params.id }}>
       {({ loading, data }) => {
         if (!loading) {
+          console.log(data);
           return (
             <ProductCreator
               {...this.props}

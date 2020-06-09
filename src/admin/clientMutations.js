@@ -34,7 +34,7 @@ export const updateProduct = gql`
 `;
 
 export const deleteProduct = gql`
-  mutation($id: ID) {
+  mutation($id: ID!) {
     deleteProduct(id: $id) {
       id
     }

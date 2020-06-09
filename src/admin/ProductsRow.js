@@ -17,7 +17,7 @@ export class ProductsRow extends Component {
         </button>
         <Link
           to={`/admin/products/${this.props.product.id}`}
-          className='btn btn-secondary'
+          className='btn btn-sm btn-secondary mx-1'
         >
           Edit
         </Link>

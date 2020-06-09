@@ -69,7 +69,7 @@ export class ValidatedForm extends Component {
           >
             {this.props.cancelText || 'Cancel'}
           </button>
-          <button class='btn btn-primary m-1' onClick={this.handleSubmit}>
+          <button className='btn btn-primary m-1' onClick={this.handleSubmit}>
             {this.props.submitText || 'Submit'}
           </button>
         </div>

@@ -12,7 +12,7 @@ export class ProductsTable extends Component {
 
       <PaginationControls keys={['ID', 'Name', 'Category']} {...this.props} />
 
-      <table>
+      <table className='table table-sm table-stripped'>
         <thead>
           <tr>
             <th>ID</th>

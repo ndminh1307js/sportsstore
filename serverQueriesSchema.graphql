@@ -36,8 +36,8 @@ type productSelection {
 type Query {
   product(id: ID!): product
   products(
-    category: String!
-    sort: String!
+    category: String
+    sort: String
     page: Int
     pageSize: Int
   ): productPage
