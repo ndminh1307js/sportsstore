@@ -6,7 +6,7 @@ const APP_SECRET = 'myappsecret',
 
 const anonOps = [
   { method: 'GET', urls: ['/api/products', '/api/categories'] },
-  { method: 'POST', urls: ['/api/orders', '/login'] },
+  { method: 'POST', urls: ['/api/orders'] },
 ];
 
 module.exports = function (req, res, next) {

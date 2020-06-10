@@ -29,6 +29,7 @@ export const Admin = authWrapper(
           }),
       });
     }
+
     render() {
       return (
         <ApolloProvider client={this.client}>
@@ -54,7 +55,7 @@ export const Admin = authWrapper(
               <div className='col-9 p-2'>
                 <Switch>
                   {!this.props.isAuthenticated && (
-                    <Route path='/login' component={AuthPrompt} />
+                    <Route component={AuthPrompt} />
                   )}
                   <Route path='/admin/orders' component={OrdersConnector} />
                   <Route
